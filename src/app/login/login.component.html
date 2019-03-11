@@ -1,0 +1,26 @@
+<body>
+  <div class="fluid-container">
+    <div class="login-page">
+      <div class="form">
+        <form id="login" class="login-form" [formGroup]="myForm">
+          <input formControlName="email"  type="email" placeholder="email" maxlength="30" [(ngModel)]="email" name="email" #usr/>
+          <input formControlName="password" type="password" placeholder="password" maxlength="20" [(ngModel)]="password" name="password" #pwd/>
+          <div class = "json" *ngIf="email">
+                {{ myForm.value | json }}
+          </div>
+          <button (click)="validate(usr, pwd)">login</button>
+        </form>
+        <div class="form-footer">
+          <div class="row">
+            <div class="col-xs-7 col-sm-7 col-md-7">
+              <a href="#"> Forgot password? </a>
+            </div>
+            <div class="col-xs-5 col-sm-5 col-md-5">
+              <i class="fa fa-check"></i> <a routerLink="../join"> Sign Up </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>

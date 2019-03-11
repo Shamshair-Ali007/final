@@ -1,0 +1,27 @@
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+div.fluid-container {
+  height: 35em;
+  background: transparent;
+}
+div.h1{
+  position: relative;
+  size: 60rem;
+}
+img{
+  width: 100%;
+  height: 100%;
+}
+.login-page {
+  width: 360px;
+  padding: 5% 5% 5% 5%;
+  margin: auto;
+  margin-top: 2%;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  background-color: rgba(0, 0, 0, 0.5);
+
+}
